@@ -6,17 +6,17 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(1920, 1080), "Pong");
+    sf::RenderWindow window(sf::VideoMode(1080, 720), "Pong");
 
     int score = 0;
     int lives = 3;
     bool gameOver = false;
 
     // create bat at bottom of the screen
-    Bat bat(1920 / 2, 1080 - 20);
+    Bat bat(1080 / 2, 720 - 20);
 
     // create a ball
-    Ball ball(1920 / 2, 0);
+    Ball ball(1080 / 2, 0);
 
     // fonts
     sf::Font font;
